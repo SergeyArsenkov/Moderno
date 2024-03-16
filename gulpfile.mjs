@@ -7,7 +7,6 @@ import rename from 'gulp-rename'
 import gulpSass from 'gulp-sass'
 import uglify from 'gulp-uglify'
 import * as sassCompiler from 'sass'
-
 const sass = gulpSass(sassCompiler)
 
 gulp.task('sass', function () {
@@ -40,11 +39,12 @@ gulp.task('script', function () {
 	return gulp
 		.src([
 			'node_modules/slick-carousel/slick/slick.js',
+			'node_modules/mixitup/dist/mixitup.js',
 			'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('app.js'))
+		.pipe(gulp.dest('app/js'))
 })
 
 gulp.task('html', function () {
