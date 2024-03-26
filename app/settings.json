@@ -122,6 +122,8 @@
 	"emmet.triggerExpansionOnTab": true,
 
 	//Format
+	"editor.trimAutoWhitespace": false,
+	"files.trimTrailingWhitespace": false,
 	"prettier.semi": false,
 	"prettier.useTabs": true,
 	"editor.formatOnSave": true,
